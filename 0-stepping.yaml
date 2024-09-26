@@ -1,0 +1,11 @@
+execution:
+  - scenario: account_service_test
+
+scenarios:
+  account_service_test:
+    script: "Load Testing/AccountService.jmx"
+
+reporting:
+  - module: final-stats
+  - module: console
+  - module: junit-xml
