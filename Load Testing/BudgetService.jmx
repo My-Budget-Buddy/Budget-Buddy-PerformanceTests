@@ -10,8 +10,8 @@
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
-        <intProp name="ThreadGroup.num_threads">5</intProp>
-        <intProp name="ThreadGroup.ramp_time">3</intProp>
+        <intProp name="ThreadGroup.num_threads">250</intProp>
+        <intProp name="ThreadGroup.ramp_time">0</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
@@ -28,7 +28,7 @@
         <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
           <collectionProp name="CookieManager.cookies"/>
           <boolProp name="CookieManager.clearEachIteration">true</boolProp>
-          <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+          <boolProp name="CookieManager.controlledByGroup">false</boolProp>
         </CookieManager>
         <hashTree/>
         <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
@@ -499,7 +499,7 @@ vars.put(&quot;userId&quot;, id);</stringProp>
               <label>true</label>
               <code>true</code>
               <message>true</message>
-              <threadName>true</threadName>
+              <Name>true</Name>
               <dataType>true</dataType>
               <encoding>false</encoding>
               <assertions>true</assertions>
@@ -516,7 +516,7 @@ vars.put(&quot;userId&quot;, id);</stringProp>
               <bytes>true</bytes>
               <sentBytes>true</sentBytes>
               <url>true</url>
-              <threadCounts>true</threadCounts>
+              <Counts>true</Counts>
               <idleTime>true</idleTime>
               <connectTime>true</connectTime>
             </value>
@@ -536,7 +536,7 @@ vars.put(&quot;userId&quot;, id);</stringProp>
               <label>true</label>
               <code>true</code>
               <message>true</message>
-              <threadName>true</threadName>
+              <Name>true</Name>
               <dataType>true</dataType>
               <encoding>false</encoding>
               <assertions>true</assertions>
@@ -553,7 +553,7 @@ vars.put(&quot;userId&quot;, id);</stringProp>
               <bytes>true</bytes>
               <sentBytes>true</sentBytes>
               <url>true</url>
-              <threadCounts>true</threadCounts>
+              <Counts>true</Counts>
               <idleTime>true</idleTime>
               <connectTime>true</connectTime>
             </value>
