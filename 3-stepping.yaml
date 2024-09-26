@@ -1,9 +1,9 @@
 execution:
-  - scenario: transaction_service_load_test
+  - scenario: budget_service_test
 
 scenarios:
-  transaction_service_load_test:
-    script: "Load Testing/TransactionsService_Load.jmx"
+  budget_service_test:
+    script: "Load Testing/BudgetService.jmx"
 
 reporting:
   - module: final-stats
