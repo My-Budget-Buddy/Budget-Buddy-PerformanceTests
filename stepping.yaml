@@ -1,0 +1,11 @@
+execution:
+  - scenario: user_service_load_test
+
+scenarios:
+  user_service_load_test:
+    script: "Load Testing/UserService_Load.jmx"
+
+reporting:
+  - module: final-stats
+  - module: console
+  - module: junit-xml
