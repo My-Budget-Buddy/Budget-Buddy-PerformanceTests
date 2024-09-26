@@ -1,8 +1,8 @@
 execution:
-  - scenario: budget_service_load_test
+  - scenario: budget_service_test
 
 scenarios:
-  budget_service_load_test:
+  budget_service_test:
     script: "Load Testing/BudgetService.jmx"
 
 reporting:
