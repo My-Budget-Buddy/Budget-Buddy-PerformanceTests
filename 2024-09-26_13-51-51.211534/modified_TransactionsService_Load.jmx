@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan">
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
-    </TestPlan>
+    <boolProp name="TestPlan.functional_mode">false</boolProp></TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
         <intProp name="ThreadGroup.num_threads">1</intProp>
@@ -22,12 +22,12 @@
           <collectionProp name="CookieManager.cookies"/>
           <boolProp name="CookieManager.clearEachIteration">true</boolProp>
           <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
-        </CookieManager>
+        <stringProp name="CookieManager.implementation">org.apache.jmeter.protocol.http.control.HC4CookieHandler</stringProp></CookieManager>
         <hashTree/>
         <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
           <stringProp name="TestPlan.comments">Set HTTP Request server name and port defaults</stringProp>
           <stringProp name="HTTPSampler.domain">staging.api.z-congo.com</stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.port"/>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
             <collectionProp name="Arguments.arguments"/>
@@ -56,9 +56,9 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-    &quot;username&quot;: &quot;joseph.sam@gmail.com&quot;,&#xd;
-    &quot;password&quot;: &quot;password1&quot;&#xd;
+                <stringProp name="Argument.value">{&#13;
+    "username": "joseph.sam@gmail.com",&#13;
+    "password": "password1"&#13;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -74,25 +74,25 @@
           </JSONPostProcessor>
           <hashTree/>
           <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor">
-            <stringProp name="filename"></stringProp>
-            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"/>
+            <stringProp name="parameters"/>
             <boolProp name="resetInterpreter">false</boolProp>
             <stringProp name="script">import org.apache.commons.codec.binary.Base64;
 
-log.info(&quot;— — — — — — Decode JWT — — — — — —&quot;);
-String[] split_string = vars.get(&quot;bearer_token&quot;).split(&quot;\\.&quot;);
+log.info("— — — — — — Decode JWT — — — — — —");
+String[] split_string = vars.get("bearer_token").split("\\.");
 String base64EncodedBody = split_string[1];
 Base64 base64Url = new Base64(true);
 
-log.info(&quot;~~~ JWT Body ~&quot;);
+log.info("~~~ JWT Body ~");
 String body = new String(base64Url.decode(base64EncodedBody));
-log.info(&quot;JWT Body : &quot; + body);
+log.info("JWT Body : " + body);
 
-String[] split_body = body.split(&quot;:&quot;);
+String[] split_body = body.split(":");
 String value = split_body[split_body.length-1];
-log.info(&quot;Extracted Value: &quot; + value.substring(1, value.length()-2));
+log.info("Extracted Value: " + value.substring(1, value.length()-2));
 
-vars.put(&quot;userId&quot;, value.substring(1, value.length()-2));</stringProp>
+vars.put("userId", value.substring(1, value.length()-2));</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
@@ -163,18 +163,18 @@ vars.put(&quot;userId&quot;, value.substring(1, value.length()-2));</stringProp>
           <hashTree>
             <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor">
               <boolProp name="resetInterpreter">false</boolProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"/>
+              <stringProp name="filename"/>
               <stringProp name="script">ArrayList categories = new ArrayList();
-categories.add(&quot;Groceries&quot;);
-categories.add(&quot;Entertainment&quot;);
-categories.add(&quot;Dining&quot;);
-categories.add(&quot;Transportation&quot;);
-categories.add(&quot;Healthcare&quot;);
-categories.add(&quot;Living Expenses&quot;);
-categories.add(&quot;Shopping&quot;);
-categories.add(&quot;Income&quot;);
-categories.add(&quot;Misc&quot;);
+categories.add("Groceries");
+categories.add("Entertainment");
+categories.add("Dining");
+categories.add("Transportation");
+categories.add("Healthcare");
+categories.add("Living Expenses");
+categories.add("Shopping");
+categories.add("Income");
+categories.add("Misc");
 
 for (int i = 0; i &lt; categories.size(); i++) {
   log.info(categories.get(i));
@@ -183,13 +183,13 @@ for (int i = 0; i &lt; categories.size(); i++) {
 int idx = new Random().nextInt(categories.size());
 String category = (categories.get(idx));
 
-vars.put(&quot;category&quot;, category);</stringProp>
+vars.put("category", category);</stringProp>
             </BeanShellPreProcessor>
             <hashTree/>
             <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Transaction Fill-in">
               <stringProp name="maximumValue">999</stringProp>
               <stringProp name="minimumValue">1</stringProp>
-              <stringProp name="outputFormat"></stringProp>
+              <stringProp name="outputFormat"/>
               <boolProp name="perThread">true</boolProp>
               <stringProp name="randomSeed">500</stringProp>
               <stringProp name="variableName">rand</stringProp>
@@ -206,15 +206,15 @@ vars.put(&quot;category&quot;, category);</stringProp>
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&#xd;
-     &quot;userId&quot;: ${userId},&#xd;
-     &quot;accountId&quot;: 1,&#xd;
-     &quot;vendorName&quot;: &quot;${rand} Vendor&quot;,&#xd;
-     &quot;amount&quot;: ${rand},&#xd;
-     &quot;category&quot;: &quot;${category}&quot;,&#xd;
-     &quot;description&quot;: &quot;${rand} Description&quot;,&#xd;
-     &quot;date&quot;: &quot;2024-01-20&quot;&#xd;
-}&#xd;
+                    <stringProp name="Argument.value">{&#13;
+     "userId": ${userId},&#13;
+     "accountId": 1,&#13;
+     "vendorName": "${rand} Vendor",&#13;
+     "amount": ${rand},&#13;
+     "category": "${category}",&#13;
+     "description": "${rand} Description",&#13;
+     "date": "2024-01-20"&#13;
+}&#13;
 </stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -240,15 +240,15 @@ vars.put(&quot;category&quot;, category);</stringProp>
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&#xd;
-     &quot;userId&quot;: ${userId},&#xd;
-     &quot;accountId&quot;: 1,&#xd;
-     &quot;vendorName&quot;: &quot;Modified ${rand} Vendor&quot;,&#xd;
-     &quot;amount&quot;: ${rand},&#xd;
-     &quot;category&quot;: &quot;${category}&quot;,&#xd;
-     &quot;description&quot;: &quot;Modified ${rand} Description&quot;,&#xd;
-     &quot;date&quot;: &quot;2024-01-20&quot;&#xd;
-}&#xd;
+                    <stringProp name="Argument.value">{&#13;
+     "userId": ${userId},&#13;
+     "accountId": 1,&#13;
+     "vendorName": "Modified ${rand} Vendor",&#13;
+     "amount": ${rand},&#13;
+     "category": "${category}",&#13;
+     "description": "Modified ${rand} Description",&#13;
+     "date": "2024-01-20"&#13;
+}&#13;
 </stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -261,7 +261,7 @@ vars.put(&quot;category&quot;, category);</stringProp>
                   <stringProp name="85812486">Modified ${rand} Description</stringProp>
                   <stringProp name="1402783230">Modified ${rand} Vendor</stringProp>
                 </collectionProp>
-                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.custom_message"/>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
@@ -315,7 +315,7 @@ vars.put(&quot;category&quot;, category);</stringProp>
           <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
             <stringProp name="TestPlan.comments">Set HTTP Request server name and port defaults</stringProp>
             <stringProp name="HTTPSampler.domain">staging.api.z-congo.com</stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.port"/>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
               <collectionProp name="Arguments.arguments"/>
@@ -371,7 +371,7 @@ vars.put(&quot;category&quot;, category);</stringProp>
           <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
             <stringProp name="TestPlan.comments">Set HTTP Request server name and port defaults</stringProp>
             <stringProp name="HTTPSampler.domain">staging.api.z-congo.com</stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.port"/>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
               <collectionProp name="Arguments.arguments"/>
@@ -380,7 +380,7 @@ vars.put(&quot;category&quot;, category);</stringProp>
           </ConfigTestElement>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -414,10 +414,10 @@ vars.put(&quot;category&quot;, category);</stringProp>
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename"/>
         </ResultCollector>
         <hashTree/>
       </hashTree>
-    </hashTree>
+    <ResultCollector testname="KPI Writer" testclass="ResultCollector" guiclass="SimpleDataWriter"><stringProp name="filename">/home/daniel413x/java/skillstorm/buddy/services/Budget-Buddy-PerformanceTests/2024-09-26_13-51-51.211534/kpi-1.jtl</stringProp><objProp><name>saveConfig</name><value class="SampleSaveConfiguration"><xml>false</xml><fieldNames>true</fieldNames><time>true</time><timestamp>true</timestamp><latency>true</latency><connectTime>true</connectTime><success>true</success><label>true</label><code>true</code><message>true</message><threadName>true</threadName><dataType>false</dataType><encoding>false</encoding><assertions>false</assertions><subresults>false</subresults><responseData>false</responseData><samplerData>false</samplerData><responseHeaders>false</responseHeaders><requestHeaders>false</requestHeaders><responseDataOnError>false</responseDataOnError><saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage><bytes>true</bytes><hostname>true</hostname><threadCounts>true</threadCounts><url>false</url></value></objProp></ResultCollector><hashTree/><ResultCollector testname="Errors Writer" testclass="ResultCollector" guiclass="SimpleDataWriter"><stringProp name="filename">/home/daniel413x/java/skillstorm/buddy/services/Budget-Buddy-PerformanceTests/2024-09-26_13-51-51.211534/error-1.jtl</stringProp><objProp><name>saveConfig</name><value class="SampleSaveConfiguration"><xml>true</xml><fieldNames>true</fieldNames><time>true</time><timestamp>true</timestamp><latency>true</latency><success>true</success><label>true</label><code>true</code><message>true</message><threadName>true</threadName><dataType>true</dataType><encoding>true</encoding><assertions>true</assertions><subresults>true</subresults><responseData>false</responseData><samplerData>false</samplerData><responseHeaders>true</responseHeaders><requestHeaders>true</requestHeaders><responseDataOnError>true</responseDataOnError><saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage><bytes>true</bytes><threadCounts>true</threadCounts><url>true</url></value></objProp><boolProp name="ResultCollector.error_logging">true</boolProp></ResultCollector><hashTree/></hashTree>
   </hashTree>
 </jmeterTestPlan>

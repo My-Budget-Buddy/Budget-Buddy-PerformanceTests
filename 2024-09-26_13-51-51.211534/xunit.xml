@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="sample_labels" package_name="bzt">
+    <testcase classname="bzt-8216206427737" name="DELETE Transactions">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 50)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="DELETE User 10">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="DELETE User 6">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="DELETE User 7">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="DELETE User 8">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="DELETE User 9">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="DELETE User Transactions">
+      <error message="Non HTTP response message: Illegal character in path at index 76: https://staging.api.z-congo.com/transactionsPrivate/deleteTransaction/user/${userId}" type="Error">Non HTTP response message: Illegal character in path at index 76: https://staging.api.z-congo.com/transactionsPrivate/deleteTransaction/user/${userId}
+(status code is Non HTTP response code: java.net.URISyntaxException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="Debug Sampler"/>
+    <testcase classname="bzt-8216206427737" name="GET Account Transactions">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 5)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET Budget Transactions">
+      <error message="Non HTTP response message: Illegal character in path at index 60: https://staging.api.z-congo.com/transactionsPrivate/budget/${userId}" type="Error">Non HTTP response message: Illegal character in path at index 60: https://staging.api.z-congo.com/transactionsPrivate/budget/${userId}
+(status code is Non HTTP response code: java.net.URISyntaxException)
+(total errors of this type: 5)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET Current Month Transactions">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 5)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET RecentTransactions">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 5)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET Transactions">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 5)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET User 10">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET User 10 Check modified">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET User 6">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET User 6 Check modified">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET User 7">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET User 7 Check modified">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET User 8">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET User 8 Check modified">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET User 9">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET User 9 Check modified">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET User Transactions">
+      <error message="Non HTTP response message: Illegal character in path at index 58: https://staging.api.z-congo.com/transactionsPrivate/user/${userId}" type="Error">Non HTTP response message: Illegal character in path at index 58: https://staging.api.z-congo.com/transactionsPrivate/user/${userId}
+(status code is Non HTTP response code: java.net.URISyntaxException)
+(total errors of this type: 5)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="GET Vendor Transactions">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 5)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST Login (Get JWT)">
+      <error message="Non HTTP response message: staging.api.z-congo.com: Name or service not known" type="Error">Non HTTP response message: staging.api.z-congo.com: Name or service not known
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST Login (Get JWT)(USER SERVICE) 10">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST Login (Get JWT)(USER SERVICE) 6">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST Login (Get JWT)(USER SERVICE) 7">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST Login (Get JWT)(USER SERVICE) 8">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST Login (Get JWT)(USER SERVICE) 9">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST Register (AUTH SERVICE) 10">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST Register (AUTH SERVICE) 6">
+      <error message="Non HTTP response message: staging.api.z-congo.com: Name or service not known" type="Error">Non HTTP response message: staging.api.z-congo.com: Name or service not known
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST Register (AUTH SERVICE) 7">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST Register (AUTH SERVICE) 8">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST Register (AUTH SERVICE) 9">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST Transactions">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 50)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST User 10">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST User 6">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST User 7">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST User 8">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="POST User 9">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="PUT Transactions">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 50)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="PUT User 10">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="PUT User 6">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="PUT User 7">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="PUT User 8">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8216206427737" name="PUT User 9">
+      <error message="Non HTTP response message: staging.api.z-congo.com" type="Error">Non HTTP response message: staging.api.z-congo.com
+(status code is Non HTTP response code: java.net.UnknownHostException)
+(total errors of this type: 1)</error>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan">
@@ -24,12 +24,12 @@
           <collectionProp name="CookieManager.cookies"/>
           <boolProp name="CookieManager.clearEachIteration">true</boolProp>
           <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
-        </CookieManager>
+        <stringProp name="CookieManager.implementation">org.apache.jmeter.protocol.http.control.HC4CookieHandler</stringProp></CookieManager>
         <hashTree/>
         <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
           <stringProp name="TestPlan.comments">Set HTTP Request server name and port defaults</stringProp>
           <stringProp name="HTTPSampler.domain">staging.api.z-congo.com</stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.port"/>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
             <collectionProp name="Arguments.arguments"/>
@@ -56,7 +56,7 @@
             <stringProp name="CounterConfig.end">10</stringProp>
             <stringProp name="CounterConfig.incr">1</stringProp>
             <stringProp name="CounterConfig.name">counter_value</stringProp>
-            <stringProp name="CounterConfig.format"></stringProp>
+            <stringProp name="CounterConfig.format"/>
             <boolProp name="CounterConfig.per_user">false</boolProp>
             <stringProp name="TestPlan.comments">Automate adding users</stringProp>
           </CounterConfig>
@@ -81,9 +81,9 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&#xd;
-    &quot;username&quot;: &quot;${counter_value}@gmail.com&quot;,&#xd;
-    &quot;password&quot;: &quot;testPassword${counter_value}&quot;&#xd;
+                  <stringProp name="Argument.value">{&#13;
+    "username": "${counter_value}@gmail.com",&#13;
+    "password": "testPassword${counter_value}"&#13;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -101,7 +101,7 @@
             <stringProp name="CounterConfig.end">10</stringProp>
             <stringProp name="CounterConfig.incr">1</stringProp>
             <stringProp name="CounterConfig.name">counter_value</stringProp>
-            <stringProp name="CounterConfig.format"></stringProp>
+            <stringProp name="CounterConfig.format"/>
             <boolProp name="CounterConfig.per_user">false</boolProp>
             <stringProp name="TestPlan.comments">Automate adding users</stringProp>
           </CounterConfig>
@@ -127,9 +127,9 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&#xd;
-    &quot;username&quot;: &quot;${counter_value}@gmail.com&quot;,&#xd;
-    &quot;password&quot;: &quot;testPassword${counter_value}&quot;&#xd;
+                  <stringProp name="Argument.value">{&#13;
+    "username": "${counter_value}@gmail.com",&#13;
+    "password": "testPassword${counter_value}"&#13;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -155,11 +155,11 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"> {&#xd;
- 	&quot;id&quot;: ${counter_value},&#xd;
-    &quot;email&quot;: &quot;${counter_value}@gmail.com&quot;,&#xd;
-    &quot;firstName&quot;: &quot;TestUser_${counter_value}&quot;,&#xd;
-    &quot;lastName&quot;: &quot;LastName_${counter_value}&quot;&#xd;
+                  <stringProp name="Argument.value"> {&#13;
+ 	"id": ${counter_value},&#13;
+    "email": "${counter_value}@gmail.com",&#13;
+    "firstName": "TestUser_${counter_value}",&#13;
+    "lastName": "LastName_${counter_value}"&#13;
   }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -188,11 +188,11 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"> {&#xd;
-    &quot;id&quot;: ${counter_value},&#xd;
-    &quot;email&quot;: &quot;${counter_value}@gmail.com&quot;,&#xd;
-    &quot;firstName&quot;: &quot;ModifiedTestUser_${counter_value}&quot;,&#xd;
-    &quot;lastName&quot;: &quot;ModifiedLastName_${counter_value}&quot;&#xd;
+                  <stringProp name="Argument.value"> {&#13;
+    "id": ${counter_value},&#13;
+    "email": "${counter_value}@gmail.com",&#13;
+    "firstName": "ModifiedTestUser_${counter_value}",&#13;
+    "lastName": "ModifiedLastName_${counter_value}"&#13;
   }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -205,7 +205,7 @@
                 <stringProp name="-504786177">ModifiedTestUser_${counter_value}</stringProp>
                 <stringProp name="-1598310213">ModifiedLastName_${counter_value}</stringProp>
               </collectionProp>
-              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.custom_message"/>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
@@ -235,7 +235,7 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -269,7 +269,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename"/>
         </ResultCollector>
         <hashTree/>
         <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
@@ -279,6 +279,6 @@
         </DebugSampler>
         <hashTree/>
       </hashTree>
-    </hashTree>
+    <ResultCollector testname="KPI Writer" testclass="ResultCollector" guiclass="SimpleDataWriter"><stringProp name="filename">/home/daniel413x/java/skillstorm/buddy/services/Budget-Buddy-PerformanceTests/2024-09-26_13-51-51.211534/kpi.jtl</stringProp><objProp><name>saveConfig</name><value class="SampleSaveConfiguration"><xml>false</xml><fieldNames>true</fieldNames><time>true</time><timestamp>true</timestamp><latency>true</latency><connectTime>true</connectTime><success>true</success><label>true</label><code>true</code><message>true</message><threadName>true</threadName><dataType>false</dataType><encoding>false</encoding><assertions>false</assertions><subresults>false</subresults><responseData>false</responseData><samplerData>false</samplerData><responseHeaders>false</responseHeaders><requestHeaders>false</requestHeaders><responseDataOnError>false</responseDataOnError><saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage><bytes>true</bytes><hostname>true</hostname><threadCounts>true</threadCounts><url>false</url></value></objProp></ResultCollector><hashTree/><ResultCollector testname="Errors Writer" testclass="ResultCollector" guiclass="SimpleDataWriter"><stringProp name="filename">/home/daniel413x/java/skillstorm/buddy/services/Budget-Buddy-PerformanceTests/2024-09-26_13-51-51.211534/error.jtl</stringProp><objProp><name>saveConfig</name><value class="SampleSaveConfiguration"><xml>true</xml><fieldNames>true</fieldNames><time>true</time><timestamp>true</timestamp><latency>true</latency><success>true</success><label>true</label><code>true</code><message>true</message><threadName>true</threadName><dataType>true</dataType><encoding>true</encoding><assertions>true</assertions><subresults>true</subresults><responseData>false</responseData><samplerData>false</samplerData><responseHeaders>true</responseHeaders><requestHeaders>true</requestHeaders><responseDataOnError>true</responseDataOnError><saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage><bytes>true</bytes><threadCounts>true</threadCounts><url>true</url></value></objProp><boolProp name="ResultCollector.error_logging">true</boolProp></ResultCollector><hashTree/></hashTree>
   </hashTree>
 </jmeterTestPlan>

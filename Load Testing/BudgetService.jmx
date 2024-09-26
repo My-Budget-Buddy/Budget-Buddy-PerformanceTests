@@ -28,7 +28,7 @@
         <hashTree/>
         <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
           <stringProp name="TestPlan.comments">Set HTTP Request server name and port defaults</stringProp>
-          <stringProp name="HTTPSampler.domain">staging.api.skillstorm-congo.com</stringProp>
+          <stringProp name="HTTPSampler.domain">staging.api.z-congo.com</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">

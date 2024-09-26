@@ -1,0 +1,14 @@
+---
+execution:
+- scenario: user_service_load_test
+- scenario: transaction_service_load_test
+reporting:
+- module: final-stats
+- module: console
+- module: junit-xml
+scenarios:
+  transaction_service_load_test:
+    script: Load Testing/TransactionsService_Load.jmx
+  user_service_load_test:
+    script: Load Testing/UserService_Load.jmx
+
